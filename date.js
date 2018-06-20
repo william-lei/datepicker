@@ -12,6 +12,14 @@
 
         // 获取这个月的第一天
         var firstDay = new Date(year, month - 1, 1);
+
+
+        // 获取年，月
+        var year = firstDay.getFullYear();
+        var month = firstDay.getMonth() +1;
+
+
+
         // 获取这个月第一天是星期几
         var firstDayWeekDay = firstDay.getDay();
         if (firstDayWeekDay === 0) {
@@ -59,7 +67,11 @@
             });
         }
 
-        return ret;
+        return {
+            days:ret,
+            year:year,
+            month:month
+        };
     }
 
 
