@@ -3,7 +3,13 @@
     font-size: 16px;
     color:#666;
     box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, .3);
+    display: none;
+    position: absolute;
 }
+.datepicker-wrap.datepicker-wrap-show{
+    display: block;
+}
+
 .datepicker-wrap .datepicker-header{
     padding: 0 20px;
     height: 50px;
